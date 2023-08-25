@@ -23,7 +23,7 @@ def main(
     )
 
     prompts = [
-        "cite 10 numeros da sequencia de fibonacci",
+        "name the first 10 numbers of the fibonacci sequence",
     ]
     results = generator.text_completion(
         prompts,
