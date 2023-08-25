@@ -23,7 +23,7 @@ def main(
     )
 
     prompts = [
-        "What is the capital of Russia?",
+        "uma receita simples de maionese caseira",
     ]
     results = generator.text_completion(
         prompts,
