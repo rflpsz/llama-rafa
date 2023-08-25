@@ -12,7 +12,7 @@ def main(
     temperature: float = 0.6,
     top_p: float = 0.9,
     max_seq_len: int = 128,
-    max_gen_len: int = 64,
+    max_gen_len: int = 128,
     max_batch_size: int = 4,
 ):
     generator = Llama.build(
@@ -23,7 +23,7 @@ def main(
     )
 
     prompts = [
-        "uma receita simples de maionese caseira",
+        "cite 10 numeros da sequencia de fibonacci",
     ]
     results = generator.text_completion(
         prompts,
