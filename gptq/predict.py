@@ -1,5 +1,5 @@
 # Load model directly
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, QuantizationConfig
 
 # Create a quantization config
 config = QuantizationConfig(disable_exllama=True)
