@@ -9,4 +9,4 @@ def download_model(repo_id, filename, use_auth_token):
   print(f"Downloaded model to {downloaded_model_path} in {end_time - start_time} seconds.")
 
 if __name__ == "__main__":
-  download_model(repo_id="TheBloke/Llama-2-13B-chat-GGML", filename="llama-2-13b-chat.ggmlv3.q8_0.bin", use_auth_token=True)
+  download_model(repo_id="TheBloke/Llama-2-13B-chat-GGML", filename="llama-2-13b-chat.ggmlv3.q8_0.bin", use_auth_token=False)
