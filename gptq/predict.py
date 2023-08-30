@@ -1,8 +1,14 @@
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+# Create a quantization config
+config = QuantizationConfig(disable_exllama=True)
+
 tokenizer = AutoTokenizer.from_pretrained("TheBloke/Llama-2-13B-chat-GPTQ")
 model = AutoModelForCausalLM.from_pretrained("TheBloke/Llama-2-13B-chat-GPTQ")
+
+# Quantize the model
+model = model.quantize(config)
 
 prompt = "Tell me the first ten numbers of fibonaci sequence"
 inputs = tokenizer(prompt, return_tensors="pt")
